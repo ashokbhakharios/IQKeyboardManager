@@ -107,16 +107,16 @@ public extension IQKeyboardManagerWrapper where Base: UIView {
             return nil
         } else if placeholder?.isEmpty == false {
             return placeholder
-        } else if let placeholderable: IQPlaceholderable = base as? IQPlaceholderable {
+        // } else if let placeholderable: IQPlaceholderable = base as? IQPlaceholderable {
 
-            if let placeholder = placeholderable.attributedPlaceholder?.string,
-                !placeholder.isEmpty {
-                return placeholder
-            } else if let placeholder = placeholderable.placeholder {
-                return placeholder
-            } else {
-                return nil
-            }
+        //     if let placeholder = placeholderable.attributedPlaceholder?.string,
+        //         !placeholder.isEmpty {
+        //         return placeholder
+        //     } else if let placeholder = placeholderable.placeholder {
+        //         return placeholder
+        //     } else {
+        //         return nil
+        //     }
         } else {
             return nil
         }
